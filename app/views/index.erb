@@ -1,0 +1,8 @@
+<h1>Welcome to your Articles</h1>
+
+<a href="/articles/new">Create a new article</a>
+
+<h2>All Articles: </h2>
+<%Article.all.each do |article|%>
+<p><%=article.title%></p>
+<% end %>
