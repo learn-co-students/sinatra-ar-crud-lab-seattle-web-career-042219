@@ -1,0 +1,13 @@
+<h1>Your Articles:</h1>
+<form method="GET" action="/articles/new">
+    <button type="submit">Create New Article</button>
+</form>
+<form method="POST" action="/articles">
+	<input type="hidden" name="_method" value="DELETE">
+	<button type="submit" name="Delete">Delete All</button>
+</form>
+<% @articles.each do |article| %>
+	<p><a href="/articles/<%=article.id%>"><%= article.title %>:</a><br>
+	<%= article.content.first(20) %>...
+	<br></p>
+<% end %>

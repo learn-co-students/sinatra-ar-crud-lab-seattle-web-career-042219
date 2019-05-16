@@ -1,0 +1,1 @@
+Article.destroy_all
