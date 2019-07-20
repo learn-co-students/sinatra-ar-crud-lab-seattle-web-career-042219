@@ -6,10 +6,12 @@ gem 'sinatra-activerecord', :require => 'sinatra/activerecord'
 gem 'sinatra'
 gem 'pry-nav'
 gem 'rake'
+gem 'byebug'
 gem 'rspec'
 gem 'rack-test'
 gem 'database_cleaner', git: 'https://github.com/bmabey/database_cleaner.git'
 gem 'require_all'
+
 
 
 group :development do
