@@ -1,0 +1,12 @@
+<h3>Show an Article</h3>
+<p><b>Title:</b> <br><%= @article.title %></p>
+<p><b>Content:</b> <br><%= @article.content %></p>
+<form method="POST" action="/articles/<%= @article.id %>">
+	<input type="hidden" name="_method" value="DELETE">
+	<button type="submit" name="Delete">Delete</button>
+</form>
+<!--
+<form method="GET" action="/articles">
+    <button type="submit">All Articles</button>
+</form>
+-->
